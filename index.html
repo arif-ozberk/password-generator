@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="headingDiv">
+            <h1>Pass Generator</h1>
+        </div>
+        <div class="bottomContainer">
+            <div class="outputDiv">
+                <div class="outputField">
+                    <p class="generatedPassword"></p>
+                </div>
+                <button class="copyButton">Copy</button>
+            </div>
+        
+           <div class="passwordLengthDiv">
+                <div class="sliderTextDiv">
+                    <p>Password Length</p>
+                    <p class="passwordLengthText">3</p>
+                </div>
+                <input type="range" min="3" max="15" value="5" class="lenghtSlider" id="slider" step="1">
+           </div>
+        
+           <div class="passSettingsDiv">
+                <p class="passSettingsText">Password Settings</p>
+                <ul class="settingsUl">
+                    <li><input class="lowercase kevser" type="checkbox"> Lowercase(a-z)</li>
+                    <li><input class="uppercase kevser" type="checkbox"> Uppercase (A-Z)</li>
+                    <li><input class="numbers kevser" type="checkbox"> Numbers(0-9)</li>
+                    <li><input class="duplicate kevser" type="checkbox"> Exclude Duplicate</li>
+                    <li><input class="symbols kevser" type="checkbox"> Symbols (!-$^+)</li>
+                </ul>
+           </div>
+        
+           <button class="generateButton">Generate Password</button>
+        </div>
+    </div>
+   
+
+</body>
+</html>
